@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin Bau & Renovierung – Sanierung, Modernisierung & Trockenbau in Berlin</title>
+    <meta name="description" content="Sachliche Bau- und Renovierungsleistungen in Berlin: Sanierung & Modernisierung, Trockenbau, strukturierter Ablauf, Berlin-weit – Kontakt & Leistungsübersicht.">
+    <style>
+        :root {
+            --dark-blue: #0B3B5C;
+            --medium-blue: #245B8A;
+            --neutral: #64748B;
+            --light: #F5F7FA;
+            --accent-red: #C23B3B;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-red);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--light);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover, nav a:focus {
+            color: var(--medium-blue);
+            outline: 2px solid var(--medium-blue);
+            outline-offset: 2px;
+        }
+        nav a.active {
+            color: var(--accent-red);
+        }
+        .hero {
+            background: var(--light);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            color: var(--neutral);
+            margin-bottom: 30px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn-primary {
+            background: var(--accent-red);
+            color: white;
+        }
+        .btn-secondary {
+            background: var(--medium-blue);
+            color: white;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--dark-blue);
+        }
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .step-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .step {
+            text-align: center;
+        }
+        .step-number {
+            background: var(--medium-blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+        .bezirke-list {
+            columns: 2;
+            column-gap: 40px;
+        }
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-nav {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .copyright {
+            margin-top: 30px;
+            text-align: center;
+            color: var(--light);
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .two-columns, .step-list {
+                grid-template-columns: 1fr;
+            }
+            .bezirke-list {
+                columns: 1;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Berlin Bau & Renovierung</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Startseite</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <h1>Sanierung & Modernisierung, Trockenbau in Berlin</h1>
+                <p>Strukturierter Ablauf, Berlin-weit – für Bestandsgebäude und Neugestaltung</p>
+                <div class="cta-buttons">
+                    <a href="leistungen.html" class="btn btn-primary">Zu den Leistungen</a>
+                    <a href="kontakt.html" class="btn btn-secondary">Kontakt</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Warum Berlin Bau & Renovierung</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Substanz erhalten</h3>
+                        <p>Wir setzen auf materialschonende Verfahren und respektvolle Behandlung bestehender Bausubstanz, besonders in Berliner Altbauten und denkmalgeschützten Gebäuden.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Strukturierter Ablauf</h3>
+                        <p>Klare Phasenplanung von der Bestandsaufnahme bis zur Übergabe mit dokumentierten Zwischenschritten und transparentem Fortschritt.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Berlin-weit</h3>
+                        <p>Wir arbeiten in allen Berliner Bezirken – von Mitte bis Spandau – und kennen die spezifischen Herausforderungen der verschiedenen Stadtteile.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Klare Kommunikation</h3>
+                        <p>Regelmäßige Abstimmung, verständliche Erläuterungen technischer Details und nachvollziehbare Entscheidungswege ohne Überraschungen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--light);">
+            <div class="container">
+                <h2 class="section-title">Leistungen im Überblick</h2>
+                <div class="two-columns">
+                    <div>
+                        <h3>Sanierung & Modernisierung</h3>
+                        <ul>
+                            <li>Bestandsanalyse und Schadensdokumentation</li>
+                            <li>Untergrundvorbereitung und Spachtelqualitäten Q2-Q4</li>
+                            <li>Feuchtraumsanierung und Abdichtungen</li>
+                            <li>Oberflächengestaltung und Anstriche</li>
+                        </ul>
+                        <a href="sanierung.html">Mehr erfahren</a>
+                    </div>
+                    <div>
+                        <h3>Trockenbau</h3>
+                        <ul>
+                            <li>Trennwandsysteme und Deckenkonstruktionen</li>
+                            <li>Schall- und Brandschutzlösungen</li>
+                            <li>Feuchtraum-taugliche Systeme</li>
+                            <li>Vorsatzschalen und Installationsebenen</li>
+                        </ul>
+                        <a href="trockenbau.html">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Arbeitsweise</h2>
+                <div class="step-list">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Beratung</h3>
+                        <p>Vor-Ort-Termin mit Bestandsaufnahme, Besprechung der Möglichkeiten und Erstellung eines groben Ablaufplans.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Planung</h3>
+                        <p>Detaillierte Arbeitsplanung mit Materialliste, Zeitplan und Koordination beteiligter Gewerke.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Ausführung</h3>
+                        <p>Umsetzung mit regelmäßiger Qualitätskontrolle, Dokumentation des Fortschritts und Abstimmung bei Abweichungen.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Übergabe</h3>
+                        <p>Gemeinsame Begehung, Übergabe der Dokumentation und Besprechung der Nachsorge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--light);">
+            <div class="container">
+                <h2 class="section-title">Einsatzgebiet Berlin</h2>
+                <p>Wir arbeiten Berlin-weit in allen Bezirken:</p>
+                <ul class="bezirke-list">
+                    <li>Mitte</li>
+                    <li>Pankow</li>
+                    <li>Friedrichshain-Kreuzberg</li>
+                    <li>Charlottenburg-Wilmersdorf</li>
+                    <li>Neukölln</li>
+                    <li>Tempelhof-Schöneberg</li>
+                    <li>Steglitz-Zehlendorf</li>
+                    <li>Lichtenberg</li>
+                    <li>Treptow-Köpenick</li>
+                    <li>Marzahn-Hellersdorf</li>
+                    <li>Reinickendorf</li>
+                    <li>Spandau</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Hinweis</h2>
+                <p>Wir nennen keine pauschalen Preise oder Garantiezusagen, da jede Maßnahme individuell nach Bestandsaufnahme geplant wird. Entscheidungen über Materialien und Verfahren werden nach technischer Notwendigkeit und wirtschaftlicher Vertretbarkeit getroffen.</p>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--light);">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <p>Musterstraße 123, 10115 Berlin<br>
+                Telefon: 030 555 555<br>
+                E-Mail: hallo@berlin-bau.de</p>
+                <a href="kontakt.html">Kontaktformular</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Berlin Bau & Renovierung</h3>
+                <p>Musterstraße 123<br>10115 Berlin</p>
+                <p>Telefon: 030 555 555<br>E-Mail: hallo@berlin-bau.de</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Rechtliches</h3>
+                <ul class="footer-nav">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Berlin Bau & Renovierung</p>
+        </div>
+    </footer>
+</body>
+</html>

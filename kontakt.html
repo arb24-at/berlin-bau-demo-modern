@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Berlin Bau & Renovierung</title>
+    <meta name="description" content="Kontakt für Projekte in Berlin – Adresse, Telefon, E-Mail, simples Formular, Berlin-weit.">
+    <style>
+        :root {
+            --dark-blue: #0B3B5C;
+            --medium-blue: #245B8A;
+            --neutral: #64748B;
+            --light: #F5F7FA;
+            --accent-red: #C23B3B;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-red);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--light);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover, nav a:focus {
+            color: var(--medium-blue);
+            outline: 2极速赛车开奖官网
+            outline-offset: 2px;
+        }
+        nav a.active {
+            color: var(--accent-red);
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .contact-info {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--neutral);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 16px;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        button {
+            background: var(--accent-red);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #a52e2e;
+        }
+        .bezirke-list {
+            columns: 2;
+            column-gap: 40px;
+            margin: 20px 0;
+        }
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-nav {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .copyright {
+            margin-top: 30px;
+            text-align: center;
+            color: var(--light);
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .bezirke-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Berlin Bau & Renovierung</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Kontakt</h1>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Kontaktdaten</h3>
+                        <p><strong>Adresse:</strong><br>
+                        Musterstraße 123<br>
+                        10115 Berlin</p>
+                        
+                        <p><strong>Telefon:</strong><br>
+                        030 555 555</p>
+                        
+                        <p><strong>E-Mail:</strong><br>
+                        hallo@berlin-bau.de</p>
+                        
+                        <p><strong>Bürozeiten:</strong><br>
+                        Mo-Fr: 8:00-18:00<br>
+                        Sa: nach Vereinbarung</p>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Kontaktformular</h3>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="district">Bezirk/PLZ</label>
+                                <select id="district" name="district">
+                                    <option value="">Bitte auswählen</option>
+                                    <option value="mitte">Mitte</option>
+                                    <option value="pankow">Pankow</option>
+                                    <option value="friedrichshain-kreuzberg">Friedrichshain-Kreuzberg</option>
+                                    <option value="charlottenburg-wilmersdorf">Charlottenburg-Wilmersdorf</option>
+                                    <option value="neukölln">Neukölln</option>
+                                    <option value="tempelhof-schoeneberg">Tempelhof-Schöneberg</option>
+                                    <option value="steglitz-zehlendorf">Steglitz-Zehlendorf</option>
+                                    <option value="lichtenberg">Lichtenberg</option>
+                                    <option value="treptow-koepenick">Treptow-Köpenick</option>
+                                    <option value="marzahn-hellersdorf">Marzahn-Hellersdorf</option>
+                                    <option value="reinickendorf">Reinickendorf</option>
+                                    <option value="spandau">Spandau</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Anliegen *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit">Nachricht senden</button>
+                        </form>
+                        
+                        <p style="margin-top: 20px; font-size: 14px; color: var(--neutral);">
+                            Hinweis: Weitere Informationen zum Datenschutz finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+                        </p>
+                    </div>
+                </div>
+                
+                <h2 style="margin-top: 60px;">Berlin-weit</h2>
+                <p>Wir arbeiten in allen Berliner Bezirken:</p>
+                <ul class="bezirke-list">
+                    <li>Mitte</li>
+                    <li>Pankow</li>
+                    <li>Friedrichshain-Kreuzberg</li>
+                    <li>Charlottenburg-Wilmersdorf</li>
+                    <li>Neukölln</li>
+                    <li>Tempelhof-Schöneberg</li>
+                    <li>Steglitz-Zehlendorf</li>
+                    <li>Lichtenberg</li>
+                    <li>Treptow-Köpenick</极速赛车开奖官网
+                    <li>Marzahn-Hellersdorf</li>
+                    <li>Reinickendorf</li>
+                    <li>Spandau</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Berlin Bau & Renovierung</h3>
+                <p>Musterstraße 123<br>10115 Berlin</p>
+                <p>Telefon: 030 555 555<br>E-Mail: hallo@berlin-bau.de</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+                    <li><a href="极速赛车开奖官网
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Rechtliches</h3>
+                <ul class="footer-nav">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Berlin Bau & Renovierung</p>
+极速赛车开奖官网
+    </footer>
+</body>
+</html>

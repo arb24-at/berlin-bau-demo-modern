@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leistungen – Berlin Bau & Renovierung</title>
+    <meta name="description" content="Übersicht Sanierung & Modernisierung sowie Trockenbau in Berlin: textstarke Beschreibungen, Ablauf, Materialien, Berlin-weit, Kontakt.">
+    <style>
+        :root {
+            --dark-blue: #0B3B5C;
+            --medium-blue: #245B8A;
+            --neutral: #64748B;
+            --light: #F5F7FA;
+            --accent-red: #C23B3B;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-red);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--light);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover, nav a:focus {
+            color: var(--medium-blue);
+            outline: 2px solid var(--medium-blue);
+            outline-offset: 2px;
+        }
+        nav a.active {
+            color: var(--accent-red);
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--light);
+        }
+        th {
+            background: var(--light);
+            font-weight: 600;
+        }
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .bezirke-list {
+            columns: 2;
+            column-gap: 40px;
+        }
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-nav {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .copyright {
+            margin-top: 30px;
+            text-align: center;
+            color: var(--light);
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+            .bezirke-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Berlin Bau & Renovierung</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="leistungen.html" class="active">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Leistungen</h1>
+                <p>Wir bieten sachliche Bau- und Renovierungsleistungen mit Fokus auf Bestandsgebäude in Berlin. Unser Arbeitsprinzip basiert auf ruhiger, strukturierter Abwicklung mit klarer Kommunikation und materialschonenden Verfahren.</p>
+                
+                <div class="two-columns">
+                    <div>
+                        <h2>Sanierung & Modernisierung</h2>
+                        <p>Die Sanierung bestehender Gebäude erfordert besondere Sorgfalt in der Bestandsanalyse und materialgerechte Verfahren. Wir arbeiten mit verschiedenen Spachtelqualitäten von Q2 bis Q4, abgestimmt auf die jeweiligen Untergründe und Nutzungsanforderungen.</p>
+                        <p>Besondere Aufmerksamkeit gilt der Feuchtigkeitsproblematik in Berliner Altbauten, der Rissbehandlung und der Koordination mit anderen Gewerken wie Elektroinstallation, Sanitär und Tischlerarbeiten. Die Wahl der Materialien orientiert sich an technischer Notwendigkeit und wirtschaftlicher Vertretbarkeit.</p>
+                        <a href="sanierung.html">Mehr zu Sanierung</a>
+                    </div>
+                    <div>
+                        <h2>Trockenbau</h2>
+                        <p>Trockenbausysteme bieten vielfältige Möglichkeiten für Raumteilung, Deckengestaltung und technische Installationen. Wir setzen Systeme ein, die den spezifischen Anforderungen an Schallschutz, Brandschutz und Feuchtraumtauglichkeit entsprechen.</p>
+                        <p>Die Planung berücksichtigt statische Anforderungen, Installationswege und Anschlussdetails an bestehende Bauteile. Die Ausführung erfolgt mit präziser Fugenbehandlung und Oberflächenvorbereitung für die nachfolgenden Beschichtungen.</p>
+                        <a href="trockenbau.html">Mehr zu Trockenbau</a>
+                    </div>
+                </div>
+
+                <h2>Weitere Leistungen</h2>
+                <table>
+                    <tr>
+                        <th>Leistung</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td>Malerarbeiten</td>
+                        <td>Oberflächenvorbereitung und Beschichtungen mit materialspezifischen Systemen, abgestimmt auf Nutzung und Beanspruchung.</td>
+                    </tr>
+                    <tr>
+                        <td>Boden- und Fliesenarbeiten</td>
+                        <td>Verlegung von Bodenbelägen und Fliesen mit fachgerechter Untergrundvorbereitung und Fugenmaterialien.</td>
+                    </tr>
+                    <tr>
+                        <td>Badmodernisierung</td>
+                        <td>Komplette Badplanung und -ausführung mit Schwerpunkt auf fachgerechter Abdichtung und Installation.</td>
+                    </tr>
+                </table>
+
+                <h2>Ablauf & Qualität</h2>
+                <p>Unser Arbeitsablauf folgt einer klaren Reihenfolge: Nach der Bestandsaufnahme erfolgt die detaillierte Planung mit Materialauswahl und Zeitplanung. Die Ausführung wird mit regelmäßiger Qualitätskontrolle begleitet, Schutzmaßnahmen für bestehende Bauteile werden konsequent umgesetzt.</p>
+                <p>Die Materialwahl orientiert sich an technischen Anforderungen, Beanspruchung und wirtschaftlicher Vertretbarkeit. Dokumentation der ausgeführten Arbeiten und verwendeten Materialien ist Standard.</p>
+
+                <h2>Berlin-weit</h2>
+                <p>Wir arbeiten in allen Berliner Bezirken:</p>
+                <ul class="bezirke-list">
+                    <li>Mitte</li>
+                    <li>Pankow</li>
+                    <li>Friedrichshain-Kreuzberg</li>
+                    <li>Charlottenburg-Wilmersdorf</li>
+                    <li>Neukölln</li>
+                    <li>Tempelhof-Schöneberg</li>
+                    <li>Steglitz-Zehlendorf</li>
+                    <li>Lichtenberg</li>
+                    <li>Treptow-Köpenick</li>
+                    <li>Marzahn-Hellersdorf</li>
+                    <li>Reinickendorf</li>
+                    <li>Spandau</li>
+                </ul>
+                <p>Logistische Planung berücksichtigt Berlin-spezifische Gegebenheiten wie Parkmöglichkeiten, Materialanlieferung und Entsorgung.</p>
+
+                <h2>Häufige Fragen</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Wie startet ein Projekt?</div>
+                    <div>Mit einem Vor-Ort-Termin zur Bestandsaufnahme und Besprechung der Möglichkeiten. Anschließend erfolgt eine detaillierte Planung mit Zeit- und Kostenrahmen.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Welche Schallschutzlösungen sind möglich?</div>
+                    <div>Abhängig von der Bausituation kommen verschiedene Systeme zum Einsatz, von einfachen Trennwänden bis zu doppelbeplankten Konstruktionen mit Dämmung.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Können Arbeiten im bewohnten Zustand erfolgen?</div>
+                    <div>Ja, mit entsprechenden Schutzmaßnahmen und abgestimmten Arbeitszeiten. Staubarme Verfahren und regelmäßige Reinigung werden eingesetzt.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Werden Abschnitte gebildet?</div>
+                    <div>Bei umfangreichen Maßnahmen können Arbeitsabschnitte gebildet werden, um Nutzungsunterbrechungen zu minimieren.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Berlin Bau & Renovierung</h3>
+                <p>Musterstraße 123<br>10115 Berlin</p>
+                <p>Telefon: 030 555 555<br>E-Mail: hallo@berlin-bau.de</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="sanierung.html">Sanierung</a></li>
+                    <li><a href="trockenbau.html">Trockenbau</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Rechtliches</h3>
+                <ul class="footer-nav">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Berlin Bau & Renovierung</p>
+        </div>
+    </footer>
+</body>
+</html>
