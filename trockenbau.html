@@ -4,204 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trockenbau – Berlin Bau & Renovierung</title>
-    <meta name="description" content="Trockenbau in Berlin: Planung & Ausführung, Schall-/Brandschutz, Feuchtraum, Spachtelqualitäten, Materialtabelle, Berlin-weit – Kontakt.">
+    <meta name="description" content="Trockenbau in Berlin: Planung & Ausführung, Schall- und Brandschutz, Feuchtraum-Lösungen, Spachtelqualitäten, Materialbeispiele, Berlin-weit. Kontakt & interne Verlinkungen.">
     <style>
-        :root {
-            --dark-blue: #0B3B5C;
-            --medium-blue: #245B8A;
-            --neutral: #64748B;
-            --light: #F5F7FA;
-            --accent-red: #C23B3B;
+        :root{
+            --dark-blue:#0B3B5C;
+            --medium-blue:#245B8A;
+            --neutral:#64748B;
+            --light:#F5F7FA;
+            --accent-red:#C23B3B;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:-apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            font-size:17px; line-height:1.6; color:var(--dark-blue); background:#fff;
         }
-        body {
-            font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-            font-size: 17px;
-            line-height: 1.6;
-            color: var(--dark-blue);
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--ac极速赛车开奖官网
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: none;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background: white;
-            padding: 20px 0;
-            border-bottom: 1px solid var(--light);
-        }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--dark-blue);
-            text-decoration: none;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        nav a {
-            color: var(--dark-blue);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav a:hover, nav a:focus {
-            color: var(--medium-blue);
-            outline: 2px solid var(--medium-blue);
-            outline-offset: 2px;
-        }
-        nav a.active {
-            color: var(--accent-red);
-        }
-        .section {
-            padding: 60px 0;
-        }
-        .section-title {
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--light);
-        }
-        th {
-            background: var(--light);
-            font-weight: 600;
-        }
-        .faq-item {
-            margin-bottom: 30px;
-        }
-        .faq-question {
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .bezirke-list {
-            columns: 2;
-            column-gap: 40px;
-        }
-        footer {
-            background: var(--dark-blue);
-            color: white;
-            padding: 40px 0;
-        }
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40极速赛车开奖官网
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .footer-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .copyright {
-            margin-top: 30px;
-            text-align: center;
-            color: var(--light);
-            font-size: 14px;
-        }
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                gap: 20px;
-            }
-            nav ul {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-            .bezirke-list {
-                columns: 1;
-            }
+        .skip-link{position:absolute;top:-40px;left:0;background:var(--accent-red);color:#fff;padding:8px;z-index:100;text-decoration:none}
+        .skip-link:focus{top:0}
+        .container{max-width:1100px;margin:0 auto;padding:0 20px}
+        header{background:#fff;padding:20px 0;border-bottom:1px solid var(--light)}
+        .header-container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+        .logo{font-size:24px;font-weight:bold;color:var(--dark-blue);text-decoration:none}
+        nav ul{display:flex;list-style:none;gap:30px}
+        nav a{color:var(--dark-blue);text-decoration:none;font-weight:500}
+        nav a:hover,nav a:focus{color:var(--medium-blue);outline:2px solid var(--medium-blue);outline-offset:2px}
+        nav a.active{color:var(--accent-red)}
+
+        /* Sections */
+        .section{padding:70px 0}
+        .section-muted{background:var(--light)}
+        .section-title{font-size:32px;margin-bottom:18px;text-align:center}
+        .section-intro{color:var(--neutral);max-width:820px;margin:0 auto 34px;text-align:center}
+
+        /* Layouts */
+        .two-columns{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+        .two-columns p{color:var(--neutral)}
+        .two-columns ul{margin:8px 0 0 18px}
+        .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+        .card{background:#fff;padding:28px;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,.05)}
+        .card h3{font-size:20px;margin-bottom:10px}
+
+        /* Tables */
+        table{width:100%;border-collapse:collapse;margin:24px 0;border:1px solid #e8edf3}
+        th,td{padding:14px 16px;text-align:left;border-bottom:1px solid #e8edf3}
+        th{background:#f1f5fa;font-weight:600}
+
+        /* FAQ */
+        .faq{max-width:900px;margin:0 auto}
+        .faq-item{border:1px solid #e7ebf1;border-radius:8px;background:#fff;padding:16px 18px}
+        .faq-item + .faq-item{margin-top:12px}
+        .faq-item h3{font-size:18px;margin-bottom:6px}
+        .faq-item p{color:var(--neutral)}
+
+        /* Lists */
+        .bezirke-list{columns:2;column-gap:40px;margin-top:10px}
+
+        /* Footer */
+        footer{background:var(--dark-blue);color:#fff;padding:40px 0}
+        .footer-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px}
+        footer a{color:#fff;text-decoration:none}
+        footer a:hover{text-decoration:underline}
+        .footer-nav{display:flex;gap:20px;list-style:none;flex-wrap:wrap}
+        .copyright{margin-top:26px;text-align:center;color:var(--light);font-size:14px}
+
+        @media(max-width:900px){.two-columns{grid-template-columns:1fr}.bezirke-list{columns:1}}
+        @media(max-width:768px){
+            .header-container{flex-direction:column;gap:20px}
+            nav ul{flex-direction:column;gap:15px;text-align:center}
         }
     </style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
-    
-    <header>
-        <div class极速赛车开奖官网
-            <a href="index.html" class="logo">Berlin Bau & Renovierung</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Startseite</a></li>
-                    <li><a href="leistungen.html">Leistungen</a></li>
-                    <li><a href="sanierung.html">Sanierung</a></li>
-                    <li><a href="trockenbau.html" class="active">Trockenbau</a></li>
-                    <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
 
-    <main id="main">
-        <section class="section">
-            <div class="container">
-                <h1 class="section-title">Trockenbau</h1>
-                <p>Trockenbausysteme bieten vielfältige Möglichkeiten für Raumteilung, Deckengestaltung und technische Installationen. Der Vorteil liegt in der schnellen, sauberen und planbaren Ausführung, besonders geeignet für Wohnungen, Büros und Ladeneinrichtungen in Berlin.</p>
-                
-                <h2>Planung & Ausführung</h2>
-                <p>Die Planung berücksichtigt statische Anforderungen, Installationswege und Anschlussdetails an bestehende Bauteile. Die Unterkonstruktion wird präzise ausgerichtet, Plattentyp und -dicke werden nach den Anforderungen an Schallschutz, Brandschutz und Beanspruchung ausgewählt.</p>
-                <p>Fugenverlauf und Anschlussdetails werden vorab geplant, um spätere Rissbildung zu vermeiden. Die Ausführung erfolgt mit materialspezifischen Befestigungssystemen und präziser Fugenbehandlung.</p>
-                
-                <h2>Schallschutz & Brandschutz</h2>
-                <p>Für erhöhte Schallschutzanforderungen kommen doppelbeplankte Konstruktionen mit geeigneten Dämmstoffen zum Einsatz. Brandschutzanforderungen werden durch feuerhemmende Platten und brandsichere Durchdringungen erfüllt.</p>
-                
-                <h2>Feuchtraum-Lösungen</h2>
-                <p>In Feuchträumen werden imprägnierte Platten verwendet, kombiniert mit fachgerechten Abdichtungen an Anschlüssen und Durchdringungen. Die Systeme sind auf die spezifischen Feuchtebelastungen abgestimmt.</p>
-                
-                <h2>Spachtelqualitäten & Oberflächen</h2>
-                <p>Die Oberflächenvorbereitung reicht von Q2 (einfache Glättung) bis Q4 (hochwertige Oberflächen für Streiflicht). Grundierungen werden materialspezifisch ausgewählt, um eine optimale Haftung und gleichmäßige Saugfähigkeit zu gewährleisten.</p>
-                
-                <h2>Materialbeispiele</h2>
-                <table>
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Berlin Bau & Renovierung</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="sanierung.html">Sanierung</a></li>
+                <li><a href="trockenbau.html" class="active">Trockenbau</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+    <!-- Intro -->
+    <section class="section section-muted">
+        <div class="container">
+            <h1 class="section-title">Trockenbau</h1>
+            <p class="section-intro">
+                Trockenbau strukturiert Räume schnell, sauber und planbar: Trennwände, Decken, Vorsatzschalen 
+                und Installations­ebenen. In Berliner Wohnungen, Büros und Ladenflächen setzen wir Systeme ein, 
+                die Anforderungen an <strong>Schall</strong>, <strong>Brand</strong> und <strong>Feuchte</strong> zuverlässig erfüllen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Planung & Ausführung -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Planung &amp; Ausführung</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Unterkonstruktion &amp; Plattenwahl</h3>
+                    <p>
+                        Unterkonstruktionen werden lot- und fluchtgerecht ausgerichtet. Plattentyp und -dicke 
+                        richten sich nach Nutzung, Beanspruchung und gewünschter Oberfläche. Fugenverlauf, 
+                        Stoßversatz und Befestigungsraster planen wir im Voraus – das verhindert spätere Risse.
+                    </p>
+                    <h3>Installationswege</h3>
+                    <p>
+                        Kabel, Leitungen und Lüftung werden früh berücksichtigt. Revisionsöffnungen und 
+                        Installations­ebenen halten Technik zugänglich und Oberflächen ruhig.
+                    </p>
+                </div>
+                <div>
+                    <h3>Fugen &amp; Oberflächen</h3>
+                    <p>
+                        Von Q2 bis Q4: Spachtelqualitäten wählen wir passend zu Lichtverhältnissen und 
+                        Nutzungsart. Grundierungen gleichen Saugfähigkeit aus, Anstriche sorgen für ein 
+                        ruhiges, robustes Bild – wichtig bei Streiflicht in Fluren oder großen Büros.
+                    </p>
+                    <h3>Saubere Schnittstellen</h3>
+                    <p>
+                        Laibungen, Sockel und Übergänge werden sauber ausgebildet. Beleuchtung, Klima und 
+                        Brandschutz klären wir rechtzeitig mit den beteiligten Gewerken.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schall- & Brandschutz / Feuchtraum -->
+    <section class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Schall, Brandschutz &amp; Feuchtraum</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Schallschutz</h3>
+                    <p>
+                        Für ruhige Räume setzen wir doppelbeplankte Konstruktionen, geeignete Dämmstoffe und 
+                        entkoppelte Profile ein. Durchdringungen werden dokumentiert und schalldicht geschlossen.
+                    </p>
+                    <h3>Brandschutz</h3>
+                    <p>
+                        Feuerwiderstände erreichen wir über brandschutz­klassifizierte Platten, 
+                        definierte Lagenaufbauten und sichere Abschottungen – inklusive dokumentierter Details.
+                    </p>
+                </div>
+                <div>
+                    <h3>Feuchtraum-Lösungen</h3>
+                    <p>
+                        In Bädern und Küchen nutzen wir imprägnierte Platten, abgestimmte Abdichtungen und 
+                        korrosionsgeschützte Profile. Anschlussdetails an Wannen, Duschen und Nischen werden 
+                        sorgfältig geplant.
+                    </p>
+                    <h3>Akustikdecken</h3>
+                    <p>
+                        Perforierte Akustikplatten mit hinterlegtem Vlies verbessern Nachhallzeiten in 
+                        Besprechungsräumen und offenen Büros – Technik bleibt wartungsfreundlich zugänglich.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materialbeispiele -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Materialbeispiele</h2>
+            <table aria-label="Materialbeispiele Trockenbau">
+                <thead>
                     <tr>
                         <th>Material</th>
                         <th>Eigenschaften</th>
                         <th>Einsatz</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>Standard-GKB</td>
-                        <td>Universalplatte für allgemeine Anwendungen</td>
-                        <td>Wände, Decken in normalen Räumen</td>
+                        <td>Universalplatte, gute Verarbeitbarkeit</td>
+                        <td>Wände &amp; Decken in normalen Räumen</td>
                     </tr>
                     <tr>
                         <td>Feuchtraumplatte</td>
@@ -211,91 +201,142 @@
                     <tr>
                         <td>Akustikplatte</td>
                         <td>Perforiert, schallabsorbierend</td>
-                        <td>Decken in Büros, Besprechungsräumen</td>
+                        <td>Decken in Büros &amp; Besprechungsräumen</td>
                     </tr>
                     <tr>
                         <td>Brandschutzplatte</td>
-                        <td>Feuerhemmend, brandsicher</td>
+                        <td>Feuerhemmend / klassifiziert</td>
                         <td>Brandwände, Installationsschächte</td>
                     </tr>
                     <tr>
                         <td>Doppelbeplankung</td>
-                        <td>Zwei Lagen für erhöhte Anforderungen</td>
-                        <td>Schallschutz, Stabilität</td>
+                        <td>Erhöhte Masse &amp; Stabilität</td>
+                        <td>Schallschutz, robuste Flächen</td>
                     </tr>
                     <tr>
                         <td>Vorsatzschale</td>
-                        <td>Vor bestehende Wände montiert</td>
-                        <td>Installationsebene, Dämmung</td>
+                        <td>Vor bestehende Wand gesetzt</td>
+                        <td>Installationsebene, Dämmung, Ausgleich</td>
                     </tr>
-                </table>
-                
-                <h2>Details & Anschlüsse</h2>
-                <p>Besondere Sorgfalt gilt den Anschlussdetails an Laibungen, Revisionsöffnungen, Kanten und Sockeln. Die Integration von Beleuchtung, Lüftung und anderen Installationen wird vorab geplant und fachgerecht ausgeführt.</p>
-                
-                <h2>Berlin-weit</h2>
-                <p>Wir arbeiten in allen Berliner Bezirken:</p>
-                <ul class="bezirke-list">
-                    <li>Mitte</li>
-                    <li>Pankow</li>
-                    <li>Friedrichshain-Kreuzberg</li>
-                    <li>Charlottenburg-Wilmersdorf</li>
-                    <li>Neukölln</li>
-                    <li>Tempelhof-Schöneberg</li>
-                    <li>Steglitz-Zehlendorf</li>
-                    <li>Lichtenberg</li>
-                    <li>Treptow-Köpenick</li>
-                    <li>Marzahn-Hellersdorf</li>
-                    <li>Reinickendorf</li>
-                    <li>Spandau</li>
-                </ul>
-                
-                <h2>Häufige Fragen</h2>
-                <div class="faq-item">
-                    <div class="faq-question">Wie startet ein Trockenbau-Projekt?</div>
-                    <div>Mit einer detaillierten Planung, die statische Anforderungen, Installationen und Anschlüsse berücksichtigt.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Welche Schallschutzwerte sind erreichbar?</div>
-                    <div>Abhängig von der Konstruktion sind verschiedene Schallschutzklassen möglich, von einfachen Trennwänden bis zu hochwertigen Schallschutzsystemen.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Können Arbeiten staubarm erfolgen?</div>
-                    <div>Ja, durch staubarme Schnitttechniken und entsprechende Absaugung. Bei umfangreichen Maßnahmen können zusätzliche Schutzmaßnahmen eingesetzt werden.</div>
-                </div>
-            </div>
-        </section>
-    </main>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-    <footer>
-        <div class="container footer-container">
-            <div>
-                <h3>Berlin Bau & Renovierung</h3>
-                <p>Musterstraße 123<br>10115 Berlin</p>
-                <p>Telefon: 030 555 555<br>E-Mail: hallo@berlin-bau.de</p>
-            </div>
-            <div>
-                <h3>Navigation</h3>
-                <ul class="footer-nav">
-                    <li><a href="index.html">Startseite</a></li>
-                    <li><a href="leistungen.html">Leistungen</a></li>
-                    <li><a href="sanierung.html">Sanierung</a></li>
-                    <li><a href="trockenbau.html">Trockenbau</a></li>
-                    <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Rechtliches</h3>
-                <ul class="footer-nav">
-                    <li><a href="impressum.html">Impressum</极速赛车开奖官网
-                    <li><a href="datenschutz.html">Datenschutz</a></li>
-                </ul>
+    <!-- Details & Anschlüsse -->
+    <section class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Details &amp; Anschlüsse</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Laibungen &amp; Kanten</h3>
+                    <p>Laibungen, Innenecken und Kanten werden ruhig ausgebildet. Kantenschutz und saubere Sockel vermeiden Beschädigungen im Alltag.</p>
+                </div>
+                <div class="card">
+                    <h3>Revisionsöffnungen</h3>
+                    <p>Technik bleibt zugänglich: Revisionsöffnungen werden unauffällig integriert und dokumentiert.</p>
+                </div>
+                <div class="card">
+                    <h3>Integration von Technik</h3>
+                    <p>Beleuchtung, Lüftung, Sprinkler – Durchdringungen sind geplant und fachgerecht abgedichtet, akustisch und brandschutztechnisch korrekt.</p>
+                </div>
+                <div class="card">
+                    <h3>Oberflächenruhe</h3>
+                    <p>Spachtelung, Grundierung, Anstrich: Ziel sind ruhige, strapazierfähige Flächen – auch bei Streiflicht.</p>
+                </div>
             </div>
         </div>
-        <div class="container copyright">
-            <p>&copy; 2023 Berlin Bau & Renovierung</p>
+    </section>
+
+    <!-- Berlin-weit -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Berlin-weit</h2>
+            <p class="section-intro">Wir arbeiten in allen Berliner Bezirken. Innenstadtlagen mit Lieferfenstern planen wir anders als Randlagen mit Lagerflächen – entscheidend ist die passende Logistik.</p>
+            <ul class="bezirke-list" aria-label="Bezirke">
+                <li>Mitte</li><li>Pankow</li><li>Friedrichshain-Kreuzberg</li><li>Charlottenburg-Wilmersdorf</li>
+                <li>Neukölln</li><li>Tempelhof-Schöneberg</li><li>Steglitz-Zehlendorf</li><li>Lichtenberg</li>
+                <li>Treptow-Köpenick</li><li>Marzahn-Hellersdorf</li><li>Reinickendorf</li><li>Spandau</li>
+            </ul>
         </div>
-    </footer>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-muted" aria-labelledby="faq-heading">
+        <div class="container">
+            <h2 id="faq-heading" class="section-title">Häufige Fragen</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3>Wie startet ein Trockenbau-Projekt?</h3>
+                    <p>Mit einer Bestandsaufnahme und Planung von Unterkonstruktion, Plattenwahl, Installationswegen und Fugenverlauf. Danach folgt die geordnete Ausführung.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Welche Schallschutzwerte sind erreichbar?</h3>
+                    <p>Abhängig von Aufbau, Masse und Dämmung. Doppelbeplankung und entkoppelte Profile ermöglichen hohe Schalldämmung.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Können Arbeiten staubarm erfolgen?</h3>
+                    <p>Ja. Staubarme Schnitttechniken, Absaugung, Abdeckungen und regelmäßige Reinigung sind Standard – besonders in bewohnten Wohnungen oder laufenden Büros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Kontaktteaser -->
+    <section class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Nächster Schritt</h2>
+            <p class="section-intro">Sie planen Trockenbau in Berlin? Schreiben Sie uns eine kurze Nachricht oder rufen Sie an. Wir vereinbaren einen Termin und klären die nächsten Schritte.</p>
+            <div class="two-columns">
+                <div>
+                    <p><strong>Adresse</strong><br>Musterstraße 123<br>10115 Berlin</p>
+                    <p><strong>Telefon</strong><br>030&nbsp;555&nbsp;555</p>
+                    <p><strong>E-Mail</strong><br>hallo@berlin-bau.de</p>
+                </div>
+                <div>
+                    <p><a href="kontakt.html" style="display:inline-block;padding:12px 18px;background:var(--accent-red);color:#fff;border-radius:4px;text-decoration:none;font-weight:600;">Kontaktformular öffnen</a></p>
+                    <p style="color:var(--neutral);margin-top:10px;">Weitere Themen:</p>
+                    <p>
+                        <a href="leistungen.html" style="margin-right:16px;text-decoration:none;color:var(--medium-blue);font-weight:600;">Leistungen</a>
+                        <a href="sanierung.html" style="text-decoration:none;color:var(--medium-blue);font-weight:600;">Sanierung &amp; Modernisierung</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-container">
+        <div>
+            <h3>Berlin Bau &amp; Renovierung</h3>
+            <p>Musterstraße 123<br>10115 Berlin</p>
+            <p>Telefon: 030&nbsp;555&nbsp;555<br>E-Mail: hallo@berlin-bau.de</p>
+        </div>
+        <div>
+            <h3>Navigation</h3>
+            <ul class="footer-nav">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="sanierung.html">Sanierung</a></li>
+                <li><a href="trockenbau.html">Trockenbau</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Rechtliches</h3>
+            <ul class="footer-nav">
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container copyright">
+        <p>&copy; 2023 Berlin Bau &amp; Renovierung</p>
+    </div>
+</footer>
+
 </body>
 </html>
